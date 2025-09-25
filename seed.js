@@ -10,7 +10,7 @@ mongoose
     console.log(err);
   });
 
-const user = require("./model/product.js");
+const user = require("./model/product");
 
 const UserSeed = [
   {
