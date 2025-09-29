@@ -1,25 +1,17 @@
 const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema({
-  name: {
+  userName: {
     type: String,
     required: true,
   },
-  brand: {
+  passWord: {
     type: String,
     required: true,
   },
-  price: {
-    type: Number,
-    required: true,
-  },
-  color: {
+  role: {
     type: String,
-    required: true,
-  },
-  size: {
-    type: String,
-    enum: ["S", "M", "L"],
+    enum: ["user", "admin"],
   },
 });
 

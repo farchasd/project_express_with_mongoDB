@@ -14,33 +14,20 @@ const user = require("./model/product");
 
 const UserSeed = [
   {
-    name: "Kemeja Flanel",
-    brand: "Hollister",
-    price: 750000,
-    color: "biru muda",
-    size: "L",
+    userName: "adminKU",
+    passWord: "A085882118881",
+    role: "admin",
   },
   {
-    name: "Celana Chino",
-    brand: "Levi's",
-    price: 900000,
-    color: "krem",
-    size: "S",
-  },
-  {
-    name: "Sweater",
-    brand: "Gap",
-    price: 650000,
-    color: "merah muda",
-    size: "S",
+    userName: "adminMu",
+    passWord: "Aasadillah123",
+    role: "admin",
   },
 ];
 
 user
   .insertMany(UserSeed)
-  .then((result) => {
-    console.log(result);
-  })
+  .then((result) => {})
   .catch((err) => {
     console.log(err);
   });
